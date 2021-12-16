@@ -64,6 +64,10 @@ form i {
           align-items: center;
 }
 
+form a {
+  font-size: 12px;
+}
+
 form #login-btn {
   background-color: #F9A826;
   border: none;

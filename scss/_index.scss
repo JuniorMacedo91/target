@@ -23,6 +23,10 @@ form{
         @include display(flex, center, center)
     }
 
+    a{
+        font-size: 12px;
+    }
+
     #login-btn{
         background-color: $primary-color;
         border: none;
