@@ -10,18 +10,18 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col bg-image">
+    <div id="login-page" class="container-fluid">
+        <div class="login-container row">
+            <div class="bg-image col-lg-8 ">
                 <img src="./assets/home-image.png" alt="people celebrating">
             </div>
-            <div class="col">
+            <div class="form-wrapper col">
                 <div class="title-wrapper">
-                    <h1>Target</h1>
-                    <p>Por que satisfação é a meta</p>
+                    <h1 class="display-1">Target<span class="fs-6"> NPS</span></h1>
+                    <h6 class="text-end">Por que satisfação é a meta</h6>
                 </div>
 
-                <form action="">
+                <form action="" class="d-grid">
 
                     <label for="email">
                         <i class="fas fa-user"></i>
@@ -30,10 +30,10 @@
                     <label for="password">
                         <i class="fas fa-unlock-alt"></i>
                         <input type="password" name="password" id="password" placeholder="Senha" required>
-                        <a href=""><p>Esqueceu a senha?</p></a>
+                        <a href="#" class="text-end"><p>Esqueceu a senha?</p></a>
                     </label>
 
-                    <input type="submit" value="Log in">
+                    <input id="login-btn" type="submit" value="Log in">
                     
                 </form>
             </div>
