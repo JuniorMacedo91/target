@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 $primary-color: #F9A826;
-$secondary-color: #221F2E;
+$secondary-color: #1e1b29;
+$light-purple: #2d2b3d;
 $text-color: #fff;
 
 *, a{
     color: $text-color;
     text-decoration: none;
+    
 }
 
 .container-fluid{
