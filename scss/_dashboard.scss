@@ -43,8 +43,7 @@
     }
 }
 
-.score__wrapper{
-
+.scoreContainer{
     .date{
         text-align: right;
     }
@@ -88,5 +87,17 @@
             }
         }
     }
+
+    .resultContainer{
+        display: flex;
+        justify-content: space-between;
+
+        .results{
+            padding: 1rem;
+            border: 2px solid $primary-color;
+            border-radius: 10px;
+        }
+    }
 }
+
 
