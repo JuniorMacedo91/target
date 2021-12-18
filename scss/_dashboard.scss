@@ -35,6 +35,11 @@
 
     &__status{
         border-top: 2px solid $light-purple;
+
+        i{
+            font-size: 5rem;
+            color: greenyellow;
+        }
     }
 }
 
