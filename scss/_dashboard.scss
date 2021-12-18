@@ -45,10 +45,31 @@
 
 .score__wrapper{
     .allScores{
-        @include display(flex, center, center);
-        
+        @include display(flex, space-around, center);
+
         .score-box, .total-score{
             display: grid;
+            place-items: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .score-box{
+            position: relative;
+            width: 180px;
+            height: 150px;
+            border: 2px solid $primary-color;
+            border-radius: 1rem;
+            background-color: $secondary-color;
+            overflow: hidden;
+            @include shadow();
+
+            i{
+                position: absolute;
+                font-size: 150px;
+                margin-left: -10rem;
+                opacity: .1;
+            }
         }
     }
 }
