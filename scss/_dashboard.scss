@@ -43,3 +43,13 @@
     }
 }
 
+.score__wrapper{
+    .allScores{
+        @include display(flex, center, center);
+        
+        .score-box, .total-score{
+            display: grid;
+        }
+    }
+}
+
