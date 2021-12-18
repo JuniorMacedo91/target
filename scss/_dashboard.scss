@@ -44,6 +44,11 @@
 }
 
 .score__wrapper{
+
+    .date{
+        text-align: right;
+    }
+
     .allScores{
         @include display(flex, space-around, center);
 
@@ -52,6 +57,7 @@
             place-items: center;
             text-transform: uppercase;
             letter-spacing: 3px;
+            @include shadow();
         }
 
         .score-box{
@@ -59,16 +65,26 @@
             width: 180px;
             height: 150px;
             border: 2px solid $primary-color;
-            border-radius: 1rem;
+            border-radius: 10px;
             background-color: $secondary-color;
             overflow: hidden;
-            @include shadow();
 
             i{
                 position: absolute;
                 font-size: 150px;
                 margin-left: -10rem;
                 opacity: .1;
+            }
+        }
+
+        .total-score{
+            background-color: $primary-color;
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+
+            h1{
+                color: $secondary-color;
             }
         }
     }
