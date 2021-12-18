@@ -5,10 +5,9 @@ $secondary-color: #1e1b29;
 $light-purple: #2d2b3d;
 $text-color: #fff;
 
-*, a{
+body{
     color: $text-color;
-    text-decoration: none;
-    
+    background-color: $light-purple;
 }
 
 .container-fluid{
