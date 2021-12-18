@@ -153,4 +153,26 @@ form #login-btn:hover {
 .employeeContainer__status {
   border-top: 2px solid #2d2b3d;
 }
+
+.employeeContainer__status i {
+  font-size: 5rem;
+  color: greenyellow;
+}
+
+.score__wrapper .allScores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.score__wrapper .allScores .score-box, .score__wrapper .allScores .total-score {
+  display: -ms-grid;
+  display: grid;
+}
 /*# sourceMappingURL=main.css.map */
