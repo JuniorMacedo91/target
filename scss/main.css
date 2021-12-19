@@ -1,11 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 body {
   color: #fff;
-  background-color: #2d2b3d;
+  background-color: #262432;
 }
 
 .container-fluid {
   height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #F9A826;
 }
 
 h1 {
@@ -26,7 +36,7 @@ h1 {
 }
 
 .form-wrapper {
-  background-color: #1e1b29;
+  background-color: #181622;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,19 +59,11 @@ form input {
   border: none;
   border-bottom: 1px solid #fff;
   padding-left: 1.5rem;
+  color: #fff;
 }
 
 form i {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 form a {
@@ -103,7 +105,7 @@ form #login-btn:hover {
 .employeeContainer {
   padding: 0;
   text-align: center;
-  background-color: #1e1b29;
+  background-color: #181622;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -136,10 +138,12 @@ form #login-btn:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 100% 20%;
+     object-position: 100% 20%;
 }
 
 .employeeContainer__informations {
-  border-bottom: 2px solid #2d2b3d;
+  border-bottom: 2px solid #262432;
 }
 
 .employeeContainer__informations h3 {
@@ -147,7 +151,7 @@ form #login-btn:hover {
 }
 
 .employeeContainer__status {
-  border-top: 2px solid #2d2b3d;
+  border-top: 2px solid #262432;
 }
 
 .employeeContainer__status i {
@@ -155,22 +159,44 @@ form #login-btn:hover {
   color: greenyellow;
 }
 
-.scoreContainer .date {
-  text-align: right;
-}
-
-.scoreContainer .allScores {
+.scoreContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scoreContainer .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.scoreContainer .allScores .score-box, .scoreContainer .allScores .total-score {
+.scoreContainer .scoreDisplay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scoreContainer .scoreDisplay .score-box, .scoreContainer .scoreDisplay .total-score {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -180,37 +206,90 @@ form #login-btn:hover {
           box-shadow: 0px 4px 10px #000000;
 }
 
-.scoreContainer .allScores .score-box {
+.scoreContainer .scoreDisplay .score-box {
   position: relative;
   width: 180px;
-  height: 150px;
+  height: 100%;
+  padding: 10px;
   border: 2px solid #F9A826;
   border-radius: 10px;
-  background-color: #1e1b29;
+  background-color: #181622;
   overflow: hidden;
 }
 
-.scoreContainer .allScores .score-box i {
+.scoreContainer .scoreDisplay .score-box i {
   position: absolute;
   font-size: 150px;
   margin-left: -10rem;
   opacity: .1;
 }
 
-.scoreContainer .allScores .total-score {
+.scoreContainer .scoreDisplay .total-score {
   background-color: #F9A826;
-  width: 250px;
-  height: 150px;
+  width: 280px;
+  height: 100%;
   border-radius: 10px;
 }
 
-.scoreContainer .allScores .total-score h1 {
-  color: #1e1b29;
+.scoreContainer .scoreDisplay .total-score h1 {
+  color: #181622;
 }
 
-.resultContainer .row .results, .resultContainer .row .ranking {
+.resultContainer .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resultContainer .results, .resultContainer .ranking-employees {
+  height: 250px;
   padding: 1rem;
+  background-color: #181622;
   border: 2px solid #F9A826;
   border-radius: 10px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 4px 10px #000000;
+          box-shadow: 0px 4px 10px #000000;
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .employeeContainer {
+    height: 100vw;
+  }
+  .employeeContainer__picture img {
+    width: 50%;
+  }
+  .scoreContainer .scoreDisplay .score-box {
+    width: 150px;
+  }
+  .scoreContainer .scoreDisplay .score-box i {
+    font-size: 100px;
+    margin-left: -6rem;
+  }
+  .scoreContainer .scoreDisplay .total-score {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .scoreContainer .score-wrapper .scoreDisplay {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+  }
+  .scoreContainer .score-wrapper .scoreDisplay .score-box {
+    width: 100%;
+  }
+  .scoreContainer .score-wrapper .scoreDisplay .score-box i {
+    font-size: 100px;
+    margin-left: -15rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

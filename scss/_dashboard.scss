@@ -19,6 +19,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: 100% 20%;
         }
     }
 
@@ -40,12 +41,15 @@
 }
 
 .scoreContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     .date{
-        text-align: right;
+        @include display(flex, space-between, center)
     }
 
-    .allScores{
-        @include display(flex, space-around, center);
+    .scoreDisplay{
+        @include display(flex, space-between, center);
 
         .score-box, .total-score{
             display: grid;
@@ -58,7 +62,8 @@
         .score-box{
             position: relative;
             width: 180px;
-            height: 150px;
+            height: 100%;
+            padding: 10px;
             border: 2px solid $primary-color;
             border-radius: 10px;
             background-color: $secondary-color;
@@ -74,8 +79,8 @@
 
         .total-score{
             background-color: $primary-color;
-            width: 250px;
-            height: 150px;
+            width: 280px;
+            height: 100%;
             border-radius: 10px;
 
             h1{
@@ -86,12 +91,17 @@
 }
 
 .resultContainer{
-    .row{
-        .results, .ranking{
-            padding: 1rem;
-            border: 2px solid $primary-color;
-            border-radius: 10px;
-        }
+    .filter{
+        @include display(flex, space-between,center)
+    }
+    .results, .ranking-employees{
+        height: 250px;
+        padding: 1rem;
+        background-color: $secondary-color;
+        border: 2px solid $primary-color;
+        border-radius: 10px;
+        overflow: auto;
+        @include shadow();
     }
 }
 

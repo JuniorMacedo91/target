@@ -1,0 +1,47 @@
+@media screen and (min-width:577px) and (max-width: 768px) {
+    .employeeContainer{
+        height: 100vw;
+
+        &__picture{
+            img{
+                width: 50%;
+            }
+        }
+    }
+        
+    .scoreContainer{
+        .scoreDisplay{
+            .score-box{
+                width: 150px;
+                i{
+                    font-size: 100px;
+                    margin-left: -6rem;
+                }
+            }
+    
+            .total-score{
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+        
+    .scoreContainer{
+        .score-wrapper{
+            .scoreDisplay{
+                display: grid;
+                place-content: center;
+                gap: 1rem;
+                .score-box{
+                    width: 100%;
+                    i{
+                        font-size: 100px;
+                        margin-left: -15rem;
+                    }
+                }
+            }
+        }
+    }
+}
