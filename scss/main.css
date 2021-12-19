@@ -52,6 +52,14 @@ h1 {
           flex-direction: column;
 }
 
+.fa-bullseye {
+  color: #fff;
+  margin-right: -1rem;
+  padding: 8px;
+  -webkit-clip-path: polygon(0 0, 50% 0%, 50% 100%, 0% 100%);
+          clip-path: polygon(0 0, 50% 0%, 50% 100%, 0% 100%);
+}
+
 form input {
   width: 100%;
   background-color: transparent;
