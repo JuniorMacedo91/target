@@ -8,6 +8,7 @@ $text-color: #fff;
 body{
     color: $text-color;
     background-color: $light-purple;
+    overflow-x: hidden;
 }
 
 .container-fluid{

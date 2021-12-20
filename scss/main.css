@@ -2,6 +2,7 @@
 body {
   color: #fff;
   background-color: #262432;
+  overflow-x: hidden;
 }
 
 .container-fluid {
@@ -285,7 +286,8 @@ form #login-btn:hover {
     width: 50%;
   }
   .scoreContainer .scoreDisplay .score-box {
-    width: 150px;
+    width: 120px;
+    font-size: 10px;
   }
   .scoreContainer .scoreDisplay .score-box i {
     font-size: 100px;
