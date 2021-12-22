@@ -9,6 +9,7 @@
 
     p{
         line-height: 7px;
+        color: #fff;
     }
 
     &__picture{
@@ -55,7 +56,15 @@
     justify-content: space-between;
     flex-direction: column;
     .date{
-        @include display(flex, space-between, center)
+        @include display(flex, space-between, center);
+
+        i{
+            color: $secondary-color;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
     }
 
     .scoreDisplay{
@@ -107,11 +116,11 @@
     .results, .ranking-employees{
         height: 250px;
         padding: 1rem;
-        background-color: $secondary-color;
-        border: 2px solid $primary-color;
+       
+        border: 1.5px solid rgb(186, 185, 185);
         border-radius: 10px;
         overflow: auto;
-        @include shadow();
+       
     }
 }
 
