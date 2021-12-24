@@ -19,14 +19,14 @@
                 </div>
 
                 <div class="employeeContainer__informations">
-                    <h3 id="employee__name">Junior Macedo</h3>
-                    <h5 id="employee__job">Especialista de Atendimento</h5>
+                    <h3 id="employee__name"></h3>
+                    <h5 id="employee__job"></h5>
                 </div>
 
                 <div class="employeeContainer__jobDatas">
-                    <p id="rn">Funcional: 123456</p>
-                    <p id="supervisor">Gestor: Osmar</p>
-                    <p id="place">Site: Casa</p>
+                    <p >Funcional: <span id="rn"></span></p>
+                    <p >Gestor: <span id="supervisor"></span></p>
+                    <p >Site: <span id="place"></span></p>
                 </div>
 
                 <div class="employeeContainer__status pb-3">
@@ -45,41 +45,35 @@
                     <div class="scoreDisplay">
                         <div class="score-box">
                             <i class="fas fa-frown"></i>
-                            <h1 id="detractors" class="display-3">-</h1>
+                            <h1 id="detractors" class="display-3"></h1>
                             <span>Detratoras</span>
                         </div>
                         <div class="score-box">
                             <i class="fas fa-meh"></i>
-                            <h1 id="passives" class="display-3">1</h1>
+                            <h1 id="passives" class="display-3"></h1>
                             <span>Neutras</span>
                         </div>
                         <div class="score-box ">
                             <i class="fas fa-smile"></i>
-                            <h1 id="promoters" class="display-3">3</h1>
+                            <h1 id="promoters" class="display-3"></h1>
                             <span>Promotoras</span>
                         </div>
                         <div class="total-score">
                             <span class="fs-3 fw-bold">NPS</span>
-                            <h1 id="total-nps" class="display-1">80%</h1>
+                            <h1 id="total-nps" class="display-1"></h1>
                         </div>
                     </div>
                 </div>
                 <div class="resultContainer ">
                     <div class="results-wrapper row p-4 gy-4">
                         <div class="col-lg-8 ">
-                            <div class="filter">
-                                <h1>Diagnósticos</h1>
-                            </div>
-                            <div class="results">
-                                
-                            </div>
+                            <h1>Diagnósticos</h1>
+                            <div class="results"></div>
                         </div>
     
                         <div class="col-lg ranking-warpper">
                             <h1>Ranking</h1>
-                            <div class="ranking-employees">
-                                
-                            </div>
+                            <ul class="ranking-employees"></ul>
                         </div>
                     </div>
                 </div>
@@ -87,7 +81,9 @@
         </div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-compat.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script src="/scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8c5bd3d475.js" crossorigin="anonymous"></script>
 </body>

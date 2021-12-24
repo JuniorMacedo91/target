@@ -110,15 +110,15 @@
 }
 
 .resultContainer{
-    .filter{
-        @include display(flex, space-between,center)
-    }
     .results, .ranking-employees{
         height: 250px;
         padding: 1rem;
        
         border: 1.5px solid rgb(186, 185, 185);
         border-radius: 10px;
+
+        color: $secondary-color;
+        list-style: none;
         overflow: auto;
        
     }
