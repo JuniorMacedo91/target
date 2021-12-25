@@ -1,15 +1,13 @@
 const auth = firebase.auth()
 
-const email = document.querySelector('#email').value
-const password = document.querySelector('#password').value
 const loginBtn = document.querySelector('#login-btn')
 
 loginBtn.addEventListener('click', signIn)
 
-const newUserEmail = 'admintarget@target.com'
-const newPassword = 'target123'
-
 function createUser(){
+    const newUserEmail = 'admintarget@target.com'
+    const newPassword = 'target123'
+
     auth.createUserWithEmailAndPassword(newUserEmail, newPassword)
             .then(user =>{
                 alert(`Usuário cadastrado com sucesso`)
@@ -19,12 +17,14 @@ function createUser(){
 }
 
 function signIn(){
-    preventDefault();
-    auth.signInWithEmailAndPassword(newUserEmail, newPassword)
-            .then(() =>{
+    event.preventDefault();
+    const email = document.querySelector('#email').value
+    const password = document.querySelector('#password').value
+
+    auth.signInWithEmailAndPassword(email, password)
+            .then(user =>{
                 
-                if(newUserEmail === email){
-                    alert('Bem - vindo(a)')
+                if(email === 'usertarget@target.com'){
                     window.open('./dashboard.html')
                 }else{
                     alert('Usuário não autorizado')
@@ -35,3 +35,5 @@ function signIn(){
                 throw error
             })
 }
+
+
