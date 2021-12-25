@@ -1,8 +1,18 @@
-import {db} from './index.js'
+const auth = firebase.auth()
 
-db.collection('Supervisora Vanessa').get()
-        .then(snapshot =>{
-            snapshot.forEach(doc =>{
-                console.log(doc.data())
+const loginBtn = document.querySelector('#login-btn')
+
+loginBtn.addEventListener('click', createUser)
+
+const newUserEmail = 'admintarget@target.com'
+const newPassword = 'target123'
+
+function createUser(){
+    auth.createUserWithEmailAndPassword(newUserEmail, newPassword)
+            .then(user =>{
+                alert(`Usuário cadastrado com sucesso`)
+            }).catch(error =>{
+                alert(`${error.message}`)
             })
-        })
+}
+
