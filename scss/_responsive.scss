@@ -25,9 +25,21 @@
             }
         }
     }
+
+    #admin-page{
+        .menu{
+            height: auto;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
+
+    #admin-page{
+        .menu{
+            height: auto;
+        }
+    }
         
     .scoreContainer{
         .score-wrapper{
