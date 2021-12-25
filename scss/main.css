@@ -114,6 +114,12 @@ form #login-btn:hover {
   color: #fff;
 }
 
+.menu {
+  background-color: #181622;
+  -webkit-box-shadow: 0px 4px 10px #000000;
+          box-shadow: 0px 4px 10px #000000;
+}
+
 .employeeContainer {
   position: relative;
   padding: 0;
@@ -295,9 +301,15 @@ form #login-btn:hover {
   .scoreContainer .scoreDisplay .total-score {
     width: 150px;
   }
+  #admin-page .menu {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  #admin-page .menu {
+    height: auto;
+  }
   .scoreContainer .score-wrapper .scoreDisplay {
     display: -ms-grid;
     display: grid;
