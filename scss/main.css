@@ -128,7 +128,7 @@ form #login-btn:hover {
           box-shadow: 0px 4px 10px #000000;
 }
 
-.pageContent {
+.pageContent, input {
   color: #181622;
 }
 
@@ -165,6 +165,20 @@ button.active {
 
 .tab-content.active {
   display: block;
+}
+
+form input, form select {
+  margin-bottom: 1rem;
+  padding: 5px 10px;
+  color: #181622;
+  border: 1px solid #C1C1C1;
+  border-radius: 5px;
+}
+
+form .button-wrapper button {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
 }
 
 .employeeContainer {
