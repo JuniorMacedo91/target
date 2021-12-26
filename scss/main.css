@@ -114,10 +114,57 @@ form #login-btn:hover {
   color: #fff;
 }
 
-.menu {
+.menu-wrapper, .menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 10px;
+}
+
+.menu-wrapper {
   background-color: #181622;
   -webkit-box-shadow: 0px 4px 10px #000000;
           box-shadow: 0px 4px 10px #000000;
+}
+
+.pageContent {
+  color: #181622;
+}
+
+button {
+  padding: 8px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  text-align: left;
+}
+
+button i {
+  padding-right: 5px;
+}
+
+button:hover {
+  background-color: #a2a2a2;
+  border: 1px solid #a2a2a2;
+}
+
+button.active {
+  background-color: #F9A826;
+  border: 1px solid #F9A826;
+}
+
+.tab-content {
+  display: none;
+  padding: 2rem;
+}
+
+.tab-content h1 {
+  margin-bottom: 3rem;
+}
+
+.tab-content.active {
+  display: block;
 }
 
 .employeeContainer {
@@ -301,13 +348,14 @@ form #login-btn:hover {
   .scoreContainer .scoreDisplay .total-score {
     width: 150px;
   }
-  #admin-page .menu {
+  #admin-page .menu-wrapper, #admin-page .menu {
+    display: block;
     height: auto;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #admin-page .menu {
+  #admin-page .menu-wrapper {
     height: auto;
   }
   .scoreContainer .score-wrapper .scoreDisplay {

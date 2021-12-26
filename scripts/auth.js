@@ -24,8 +24,8 @@ function signIn(){
     auth.signInWithEmailAndPassword(email, password)
             .then(user =>{
                 
-                if(email === 'usertarget@target.com'){
-                    window.open('./dashboard.html')
+                if(email === 'admintarget@target.com'){
+                    window.open('./admin.html')
                 }else{
                     alert('Usuário não autorizado')
                 }

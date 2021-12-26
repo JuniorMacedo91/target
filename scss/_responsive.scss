@@ -27,7 +27,8 @@
     }
 
     #admin-page{
-        .menu{
+        .menu-wrapper, .menu{
+            display: block;
             height: auto;
         }
     }
@@ -36,7 +37,7 @@
 @media screen and (max-width: 576px) {
 
     #admin-page{
-        .menu{
+        .menu-wrapper{
             height: auto;
         }
     }
