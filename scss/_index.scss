@@ -7,44 +7,32 @@
     background-color: $secondary-color;
     @include display(flex, space-evenly, center);
     flex-direction: column;
+
+    form{
+        display: grid;
+        place-content: center;
+        input{
+            color: #fff;
+        }
+        
+        i{position: absolute;}
+    
+        .login-btn{
+            background-color: $primary-color;
+            border-color: $primary-color;
+            @include shadow();
+            &:hover{
+                transform: translateY(-4px);
+                transition: .3s ease;
+            }
+        }
+    }
 }
 
 .fa-bullseye{
-    color: #fff;
     margin-right:-1rem;
     padding:8px;
     clip-path: polygon(0 0, 50% 0%, 50% 100%, 0% 100%);
-}
-
-form{
-    input{
-        width: 100%;
-        background-color: transparent;
-        outline: none;
-        border: none;
-        border-bottom: 1px solid #fff;
-        padding-left: 1.5rem;
-        color: #fff;
-    }
-    i{
-        position: absolute;
-    }
-
-    a{
-        font-size: 12px;
-    }
-
-    #login-btn{
-        background-color: $primary-color;
-        border: none;
-        justify-self: center;
-        @include shadow();
-
-        &:hover{
-            transform: translateY(-4px);
-            transition: .3s ease;
-        }
-    }
 }
 
 ::placeholder{

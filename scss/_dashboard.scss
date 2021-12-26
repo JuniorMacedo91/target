@@ -2,15 +2,11 @@
     position: relative;
     padding: 0;
     text-align: center;
+    color: #fff;
     background-color: $secondary-color;
     flex-direction: column;
     @include display(flex,space-between,center);
     @include shadow();
-
-    p{
-        line-height: 7px;
-        color: #fff;
-    }
 
     &__picture{
         width: 100%;
@@ -114,12 +110,10 @@
         height: 250px;
         padding: 1rem;
        
-        border: 1.5px solid rgb(186, 185, 185);
+        border: 1.4px solid $border-color;
         border-radius: 10px;
 
-        color: $secondary-color;
         list-style: none;
         overflow: auto;
-       
     }
 }

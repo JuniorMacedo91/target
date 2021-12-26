@@ -3,10 +3,10 @@
 $primary-color: #F9A826;
 $secondary-color: #181622;
 $light-purple: #262432;
-$text-color: #fff;
+$border-color: #C1C1C1;
 
 body{
-    color: $text-color;
+    color: $secondary-color;
     overflow-x: hidden;
 }
 
@@ -14,14 +14,10 @@ body{
     height: 100vh;
 }
 
-a{
-    text-decoration: none;
+a, i{
+    padding: 10px;
     color: #fff;
-    cursor: pointer;
-
-    &:hover{
-        color: $primary-color;
-    }
+    text-decoration: none;
 }
 
 h1{
@@ -29,9 +25,16 @@ h1{
     color: $primary-color;
 }
 
-p{
-    color: $secondary-color;
+input, select, button{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 1.9rem;
+    background-color: transparent;
+    border: 1px solid $border-color;
+    border-radius: 5px;
 }
+
+button{color: #fff;}
 
 @mixin display($type, $horizontal, $vertical) {
     display: $type;
@@ -42,3 +45,4 @@ p{
 @mixin shadow {
     box-shadow: 0px 4px 10px #000000;
 }
+

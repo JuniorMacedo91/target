@@ -1,37 +1,24 @@
-.menu-wrapper, .menu{
-    display: grid;
-    align-content: flex-start;
-    gap: 10px;
-}
-
 .menu-wrapper{
     background-color: $secondary-color;
     @include shadow();
 }
 
-.pageContent, input{
-    color: $secondary-color;
-}
-
-button{
-    padding: 8px;
-    border: 1px solid #fff;
-    background-color: transparent;
-    color: #fff;
-    text-align: left;
-
-    i{
-        padding-right: 5px;
-    }
-
-    &:hover{
-        background-color: #a2a2a2;
-        border: 1px solid #a2a2a2;
-    }
-
-    &.active{
-        background-color: $primary-color;
-        border: 1px solid $primary-color;
+nav{
+    .menu{
+        button{
+            text-align: left;
+            @include shadow();
+        
+            &:hover{
+                background-color: #a2a2a2;
+                border: 1px solid #a2a2a2;
+            }
+        
+            &.active{
+                background-color: $primary-color;
+                border: 1px solid $primary-color;
+            }
+        }
     }
 }
 
@@ -47,23 +34,3 @@ button{
         display: block;
     }
 }
-
-
-    form{
-        input, select{
-            margin-bottom: 1rem;
-            padding: 5px 10px;
-            color: $secondary-color;
-            border: 1px solid #C1C1C1;
-            border-radius: 5px;
-        }
-    
-        .button-wrapper{
-            button{
-                width: 100%;
-                margin:10px;
-                text-align: center;
-            }
-        }
-    }
-
