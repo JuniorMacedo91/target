@@ -19,7 +19,7 @@ h1 {
   color: #F9A826;
 }
 
-input, select, button {
+input, select {
   width: 100%;
   margin-bottom: 10px;
   padding: 8px 1.9rem;
@@ -29,7 +29,29 @@ input, select, button {
 }
 
 button {
+  margin-bottom: 10px;
+  padding: 8px 1.9rem;
+  background-color: transparent;
+  border: 1px solid #C1C1C1;
+  border-radius: 5px;
+}
+
+button {
   color: #fff;
+}
+
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+  gap: 1.5rem;
 }
 
 .bg-image {
@@ -277,6 +299,7 @@ button {
 }
 
 nav .menu button {
+  width: 100%;
   text-align: left;
   -webkit-box-shadow: 0px 4px 10px #000000;
           box-shadow: 0px 4px 10px #000000;
@@ -345,6 +368,16 @@ nav .menu button.active {
   .scoreContainer .score-wrapper .scoreDisplay .score-box i {
     font-size: 100px;
     margin-left: -15rem;
+  }
+  .button-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

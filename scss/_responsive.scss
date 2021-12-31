@@ -58,4 +58,8 @@
             }
         }
     }
+
+    .button-wrapper{
+        @include display(grid, stretch, center);
+    }
 }
